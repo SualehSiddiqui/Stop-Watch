@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch or Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contaier">
+        <div class="bg-div">
+            <div class="card">
+                <div class="content">
+                    <div class="back">
+                        <div class="back-content">
+                            <strong class="txt">Stop Watch</strong>
+                        </div>
+                    </div>
+                    <div class="front">
+
+                        <div class="img">
+                            <div class="circle">
+                            </div>
+                            <div class="circle" id="right">
+                            </div>
+                            <div class="circle" id="bottom">
+                            </div>
+                        </div>
+
+                        <div class="front-content">
+                            <div class="main-time-div">
+                                <div class="time-screen">
+                                    <p class="txt time-txt" id="display-time"></p>
+                                </div>
+                                <div class="time-btn">
+                                    <button class="button2 txt start-btn" onclick="startWatch()">
+                                        Start
+                                    </button>
+                                    <button class="button2 txt" onclick="pauseWatch()">
+                                        Stop
+                                    </button>
+                                    <br />
+                                    <button class="button2 txt reset-btn" onclick="resetWatch()">
+                                        Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
